@@ -26,16 +26,17 @@ const closeNav = select('.header-close-nav');
 const nav = select('nav');
 
 onEvent('click', openNav, () => {
-  nav.style.display = 'flex';
+  nav.classList.add('visible');
   openNav.classList.add('hidden');
   closeNav.classList.remove('hidden');
 })
 
 onEvent('click', closeNav, () => {
-  nav.style.display = 'none';
+  nav.classList.remove('visible');
   openNav.classList.remove('hidden');
   closeNav.classList.add('hidden');
 })
+
 
 
 
