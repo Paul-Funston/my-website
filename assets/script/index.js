@@ -1,4 +1,6 @@
 'use strict';
+
+
 /*
     MITT Tools and Automation
     Paul Funston
@@ -18,6 +20,12 @@ function select(selector, parent = document) {
 function selectAll(selector, parent = document) {
   return [...parent.querySelectorAll(selector)];
 }
+
+function sleep(duration) {
+  return new Promise(resolve => {
+      setTimeout(resolve, duration);
+  })
+} 
 
 
 // Open and close mobile nav
@@ -42,21 +50,30 @@ onEvent('click', closeNav, () => {
 const heroText = select('.hero-text');
 const heroTextLine = select('.hero-text h1');
 const hero = select('.hero');
+const content = select('.container');
 let count = 0;
 const heroTextArray = [
-    "line 1",
-    "line 2",
-    "line 3",
-    "line 4",
+    "Hello I am Paul Funston a student studying full stack development",
+    "I've always been interested in technology",
+    "After exploring many other industries and doing some soul searching",
+    "I decided to pursue software development with everything I've got",
 ]; 
 
 onEvent('click', hero, function() {
-  heroText.classList.add('visible');
-  
-  if (count >= heroTextArray.length)
-    count = 0;
+  heroText.classList.remove('visible');
 
-  heroTextLine.innerText = heroTextArray[count];
+  setTimeout(() => {
+    heroTextLine.innerText = heroTextArray[count];
+    if (count >= heroTextArray.length) {
+      hero.classList.add('hidden');
+      content.classList.add('move-in');
+
+    }
+    setTimeout(() => {
+      heroText.classList.add('visible');
+    }, 300)
+  }, 300)
+    
   count++;
 
 })
