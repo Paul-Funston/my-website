@@ -8,6 +8,7 @@
         <meta name="keywords" content="HTML, CSS, SEO, web, web development">
         <title>Title</title>
         <link rel="shortcut icon" href="./assets/media/favicon.png?v=2" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap">
@@ -17,8 +18,19 @@
     <body>
         <div class="wrapper">
             <header>
-                <div class="container">
-
+                <div class="header-container">
+                    <div class="header-title">is()</div>
+                    <button type="button" title="Open menu" class="header-open-nav"><i class="fa-solid fa-bars"></i></button>
+                    <nav>
+                        <button type="button" title="Close menu" class="header-close-nav"><i class="fa-solid fa-xmark"></i></button>
+                        <ul>
+                            <li><a href="#">is()</a></li>
+                            <li><a href="#">about()</a></li>
+                            <li><a href="#">contact()</a></li>
+                            <li><a href="#" class="social-link"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
             <main>
@@ -27,7 +39,7 @@
                 </div>
             </main>
             <footer>
-                <div class="container">
+                <div class="footer-container">
 
                 </div>
             </footer>
