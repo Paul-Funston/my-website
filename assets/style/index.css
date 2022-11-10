@@ -108,6 +108,12 @@ figure {
 
 figure h1, figure p {
   font-size: 2.5rem;
+  word-wrap: break-word;
+}
+
+.hero-text {
+  max-width: 40rem;
+  text-align: center;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -117,6 +123,7 @@ figure h1, figure p {
 .container {
   max-width: 80rem;
   margin: 0 auto;
+  padding: 0 1rem 5rem;
 }
 
 h3, h2 {
