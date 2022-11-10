@@ -47,6 +47,7 @@ header {
   width: 100%;
   height: 8rem;
   padding: 0 1rem 5rem;
+  z-index: +1;
 }
 
 .header-container {
@@ -164,7 +165,7 @@ figure h1, figure p {
   max-width: 80rem;
   margin: 0 auto;
   padding: 0 1rem 5rem;
-  transition: all 10s ease-in;
+  transition: all 5s ease-in;
 }
 
 .container.move-in {
