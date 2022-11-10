@@ -45,10 +45,14 @@ button {
   display: none;
 }
 
+button.hidden {
+  display:none;
+}
+
 @media screen and  (max-width: 770px) {
   button {display: block;}
   nav {
-      display: flex;
+      display: none;
       flex-direction: column;
       position: fixed;
       bottom: 0;
