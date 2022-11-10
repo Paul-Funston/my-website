@@ -129,3 +129,8 @@ figure h1, figure p {
 h3, h2 {
   font-size: 1.5rem;
 }
+
+
+section {
+  margin: 5rem auto;
+}
