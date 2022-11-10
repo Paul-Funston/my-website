@@ -7,3 +7,55 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Header                                                                    */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  padding: 0 1rem 5rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80rem;
+  height: 3rem;
+  
+}
+
+nav, ul {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+button {
+  display: none;
+}
+
+@media screen and  (max-width: 770px) {
+  button {display: block;}
+  nav {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+  
+  }
+  ul {
+    flex-direction: column;
+  }
+}
