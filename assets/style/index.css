@@ -7,6 +7,22 @@
   --app-black:14 18 18;
 }
 
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Default                                                                   */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+p, h1, a, button {
+  color: rgb(var(--app-white));
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a.social-link, h2, .header-close-nav, h3, h2 {
+  color: rgb(var(--app-purple));
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Header                                                                    */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -50,19 +66,8 @@ li {
   margin-left: 1rem;
 }
 
-a {
-  color: rgb(var(--app-white));
-}
-
-
-
 .button-nav {
   display: none;
-  color: rgb(var(--app-white));
-}
-
-a.social-link, header h2, .header-close-nav {
-  color: rgb(var(--app-purple));
 }
 
 button.hidden {
@@ -86,4 +91,23 @@ button.hidden {
   ul {
     flex-direction: column;
   }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Hero                                                                      */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Content                                                                   */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+
+h3, h2 {
+  font-size: 1.5rem;
 }
