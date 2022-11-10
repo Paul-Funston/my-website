@@ -38,5 +38,30 @@ onEvent('click', closeNav, () => {
 })
 
 
+// hero image
+const heroText = select('.hero-text');
+const heroTextLine = select('.hero-text h1');
+const hero = select('.hero');
+let count = 0;
+const heroTextArray = [
+    "line 1",
+    "line 2",
+    "line 3",
+    "line 4",
+]; 
+
+onEvent('click', hero, function() {
+  heroText.classList.add('visible');
+  
+  if (count >= heroTextArray.length)
+    count = 0;
+
+  heroTextLine.innerText = heroTextArray[count];
+  count++;
+
+})
+
+
+
 
 
